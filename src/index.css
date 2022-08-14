@@ -1,0 +1,29 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+  background-color: rgb(249, 249, 249);
+}
+
+input {
+  border-radius: 10px;
+  border-color: black;
+}
+
+[value="Remove"] {
+  background-color: rgb(255, 77, 112);
+}
+
+[value="Remove"]:hover {
+  background-color: crimson;
+}
+
+#standardbutton {
+  background-color: lightsteelblue;
+}
+
+#standardbutton:hover {
+  background-color: rgb(142, 158, 180);
+}

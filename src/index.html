@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Timelogger</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <center>
+      <h1>Timelogger</h1>
+      <h3>Add a shift</h3>
+      <div>
+        Date :
+        <input type="date" id="date" name="date">
+      </div>
+      <div>
+        Shift Start :
+        <input type="time" id="shiftstart" name="shiftstart">
+      </div>
+      <div>
+        Shift end :
+        <input type="time" id="shiftend" name="shiftend">
+      </div>
+      <input type="button" value="proceed" id="standardbutton"> 
+      <h3>Remove Time</h3>
+      <div>
+        Date :
+        <input type="date" id="daterem" name="daterem">
+      </div>
+      <div>
+        <input type="number" id="removedtime" name="removedtime" step="0.25"><b>hours</b> <br>
+      </div>
+      <input type="button" value="Remove" onclick="removetime()" > 
+      <h3>My worktimes</h3>
+      <div id="chart">
+        null
+      </div>
+      <i>from</i><input type="date" id="graphstart" name="graphstart"> <i>to</i><input type="date" id="graphend" name="graphend"> <br>
+      <input type="button" value="update" onclick="update()" id="standardbutton">
+    </center>
+  </body>
+</html>
