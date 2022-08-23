@@ -16,7 +16,7 @@
     "name": "Overengined",
     "email": "71342876+Overengined@users.noreply.github.com"
   },
-  "license": "MIT",
+  "license": "GPL 3.0",
   "config": {
     "forge": {
       "packagerConfig": {},
