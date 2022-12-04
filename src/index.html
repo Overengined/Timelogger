@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Timelogger</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="manifest" href="manifest.json">
   </head>
   <body>
     <center>
@@ -38,5 +39,10 @@
       <i>from</i><input type="date" id="graphstart" name="graphstart"> <i>to</i><input type="date" id="graphend" name="graphend"> <br>
       <input type="button" value="update" onclick="update()" id="standardbutton">
     </center>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worer.js")
+      }
+    </script>
   </body>
 </html>
