@@ -41,6 +41,15 @@
       </div>
       <i>from</i><input type="date" id="graphstart" name="graphstart"> <i>to</i><input type="date" id="graphend" name="graphend"> <br>
       <input type="button" value="update" onclick="update()" id="standardbutton">
+
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+      <!-- Graph should be here -->
+      
     </center>
     <script>
       if ("serviceWorker" in navigator) {
